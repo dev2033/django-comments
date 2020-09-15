@@ -34,7 +34,7 @@ class Comment(models.Model):
     timestamp = models.DateTimeField(auto_now=True, verbose_name='Дата создания комментария')
     is_child = models.BooleanField(default=False)
 
-    def __dir__(self):
+    def __str__(self):
         return str(self.id)
 
     @property

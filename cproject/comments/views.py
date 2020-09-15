@@ -38,7 +38,7 @@ def create_child_comment(request):
     """ Функция которая добавляет комментария к другому комментарию """
 
     user_name = request.POST.get('user')
-    current_id = request.Post.get('id')
+    current_id = request.POST.get('id')
     text = request.POST.get('text')
     user = User.objects.get(username=user_name)
     content_type = ContentType.objects.get(model='post')
