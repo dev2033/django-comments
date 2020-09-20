@@ -5,5 +5,5 @@ from .views import base_view, create_comment, create_child_comment
 urlpatterns = [
     path('post-comments/', base_view),
     path('create-comment/', create_comment, name='comment_create'),
-    path('create_child_comment', create_child_comment, name='comment_child_create'),
+    path('create_child_comment', create_child_comment, name='comment_child_create')
 ]
