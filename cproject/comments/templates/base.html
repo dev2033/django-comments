@@ -70,7 +70,7 @@
             const csrftoken = getCookie('csrftoken');
             data = {
                 user: "{{ request.user.username }}",
-                parentId: parentId,
+                parentId: commentId,
                 text: text,
                 id: id,
                 csrfmiddlewaretoken: csrftoken
